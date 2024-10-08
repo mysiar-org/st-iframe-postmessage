@@ -10,8 +10,6 @@ function onRender(event: Event): void {
     if (wtop) {
         wtop.postMessage(message, targetOrigin)
     }
-    console.log("RUN");
-
 }
 
 Streamlit.setFrameHeight(0)

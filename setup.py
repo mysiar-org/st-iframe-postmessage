@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
     name="st-iframe-postmessage",
-    version="0.0.1",
+    version="0.0.2",
     author="Piotr Synowiec",
     author_email="psynowiec@gmail.com",
     description="Streamlit component to send postMessage to iframe window embedding application",
