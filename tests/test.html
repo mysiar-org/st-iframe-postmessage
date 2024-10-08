@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>st-iframe-postmessage</title>
+
+    <script>
+        window.addEventListener("message", function (event) {
+            if (event.data?.source === "react-devtools-content-script" || event.data?.wappalyzer || event.data?.stCommVersion) {
+                return;
+            }
+
+            console.log("Received message:", event.data);
+        });
+    </script>
+
+</head>
+<iframe id="st-iframe-postmessage" width="100%" height="500px" src="http://localhost:8501/"></iframe>
+<body>
+</body>
+</html>
